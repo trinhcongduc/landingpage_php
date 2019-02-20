@@ -68,8 +68,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label >Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Nhập email">
                                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+									<div class="form-group">
+                                        <label >Số điện thoại</label>
+                                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phone_number" placeholder="Nhập số điện thoại">
+
                                     </div>
 
                                     <div class="form-group">
@@ -117,6 +122,7 @@
             var name = $("form").find("input[name='name']").val();
             var email = $("form").find("input[name='email']").val();
             var city = $("form").find("input[name='city']").val();
+            var phone_number = $("form").find("input[name='phone_number']").val();
 
 			$.ajax({
 				url:"actions.php",
@@ -126,10 +132,12 @@
 				    name:name,
                     email:email,
                     city:city,
+                    phone_number:phone_number,
 					submit:"submit"
 				},
                 success: function(res){
                     jnotice(' Thành công',5000);
+                    $("form")[0].reset();
                 }
 			})
         })
