@@ -1,0 +1,42 @@
+.wrapper{
+    margin: 20px 0;
+}
+
+#header{
+    margin: 20px 0px;
+}
+
+#logo{
+    height:70px
+}
+
+#slide-show{
+    height: 300px;
+}
+
+#carouselExampleIndicators{
+    height: 100% !important;
+}
+.carousel-inner{
+    height: 100% !important;
+}
+
+#footer{
+    background-color: #72ccab ;
+    height: 200px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
