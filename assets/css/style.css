@@ -1,5 +1,22 @@
+*{
+  font-size: 1em;
+  color: #646464;
+}
+.contact_address_detail a{
+  color: #646464 !important;
+}
+a{
+  color: #646464;
+}
+ul li {
+  list-style: none;
+}
+ul, ol{
+  padding-left: 0
+}
 .wrapper{
     margin: 20px 0;
+    width: auto;
 }
 
 #header{
@@ -9,7 +26,32 @@
 #logo{
     height:70px
 }
-
+.contact_form .form-control{
+  padding: 25px 10px;
+}
+.contact_form .card{
+  padding: 50px;
+}
+.contact_address .contact_address_detail{
+  padding: 20px 0 0 20px;
+}
+.contact_address_detail ul{
+  padding: 0;
+  list-style: none;
+}
+.contact_address_detail > span{
+  font-size: 1.8em;
+  margin-bottom: 10px
+}
+.contact_form .card{
+  border: none;
+}
+.card-header{
+    border-bottom: none !important;
+}
+.frm-button{
+  width: 100%;
+}
 #slide-show{
     height: 300px;
 }
@@ -20,21 +62,91 @@
 .carousel-inner{
     height: 100% !important;
 }
-
-#footer{
-    background-color: #72ccab ;
-    height: 200px;
+.panel {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.panel-info .panel-heading, .panel-info .panel-body {
+    background-color: #eceff1;
+    border: none !important;
+    padding: 10px;
+}
+.pull-left {
+    float: left !important;
+}
+.media-left, .media-right, .media-body {
+    display: table-cell;
+    vertical-align: top;
+}
+.media-left, .media > .pull-left {
+    padding-right: 10px;
+}
+#footer{
+    /* background-color: #0D1B27 ; */
+    text-align: center;
+    padding: 30px;
+}
+
+.contentTeacher,.contentStudent{
+    padding: 0 15px;
+}
+.listTeacher{
+    list-style: none;
+    padding: 0px;
+}
+.title{
+    padding: 30px 0;
+}
+.textBlue,.textBlue strong{
+  color: #003C7F;
+}
+
+
+.input-validation{
+    -moz-box-shadow:    0 0 3px 2px #dd3535;
+    -webkit-box-shadow: 0 0 3px 2px #dd3535;
+    box-shadow:         0 0 3px 2px #dd3535;
+}
+.field-obligate{
+    color: red;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
+  .panel-heading img{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .contact_form .card{
+    padding: 30px 0;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .contact_form .card{
+    padding: 50px 0;
+  }
 
 }
+
+
+/* Medium devices (landscape tablets, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .main-content{
+    padding: 30px;
+  }
+}
+
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

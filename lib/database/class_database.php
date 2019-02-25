@@ -39,11 +39,8 @@ class database{
     public function getResult(){
         return $this->result;
     }
-}
-
-function __autoload($url){
-    $url =  strtolower($url);
-    require "models/$url.php";
-
+    public function getConn(){
+        return $this->conn;
+    }
 }
 ?>
