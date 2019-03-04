@@ -29,8 +29,13 @@ function sendMail($email_config,$content)
 
     //Recipients
     $mail->setFrom(trim($email_config->email_send),$email_config->sender_name);
-    $mail->addAddress(trim($email_config->email_receive), $email_config->sender_name);    // Add a recipient
-    //$mail->addAddress($email_config->email_send);                                // Name is optional
+    //$mail->addAddress(trim($email_config->email_receive), $email_config->sender_name);    // Add a recipient
+    //$mail->addAddress($email_config->email_send);                                       // Name is optional
+    if($email_config->email_receive){
+        foreach ($email_config->email_receive as $value){
+            $mail->addAddress($value);
+        }
+    }
 
 
     //Content
