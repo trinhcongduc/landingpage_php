@@ -1,7 +1,7 @@
 <?php
 require_once "./lib/database/class_database.php";
-require_once "./inc/config.php";
-require_once "./inc/send_mail.php";
+require_once "./config/index.php";
+require_once "./inc/controller/send_mail.php";
 //include "./inc/test_senMail.php";
 
 if ($_POST["submit"]) {

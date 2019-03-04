@@ -1,4 +1,3 @@
-<?php include "inc/config.php";?>
 <?php include('inc/header.php');?>
   <div class="jumbotron text-xs-center">
     <div class="container text-center">

@@ -1,3 +1,10 @@
+<!--Import config-->
+<?php require_once "./config/index.php"?>
+
+<!--Handle language-->
+<?php require_once "./inc/controller/handle_language.php" ?>
+
+
 <!doctype html>
 <html lang="vi">
 <head>
