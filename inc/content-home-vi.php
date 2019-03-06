@@ -1,6 +1,6 @@
 <div class="wrapper">
 	<h1 class="class=" text-center""><?php echo $title ?></h1>
-	<h1><?php echo L::greeting ?></h1>
+	<h1>CONTENT-HOME-VIETNAMESE</h1>
 	<div class="container">
 		<div class="language-select">
 			<ul>
