@@ -5,8 +5,8 @@
     <div class="container">
         <div class="language-select">
             <ul>
-                <li><a href="<?php echo $base_url  ?>?lang=vi"><img src="<?php echo $base_url  ?>/assets/images/lang-icon/vi-icon.png" style="height: 50px" alt=""></a></li>
-                <li><a href="<?php echo $base_url  ?>?lang=en"><img src="<?php echo $base_url  ?>/assets/images/lang-icon/us-icon.png" style="height: 50px" alt=""></a></li>
+                <li><a href="<?php echo $base_url  ?>/vi"><img src="<?php echo $base_url  ?>/assets/images/lang-icon/vi-icon.png" style="height: 50px" alt=""></a></li>
+                <li><a href="<?php echo $base_url  ?>/en"><img src="<?php echo $base_url  ?>/assets/images/lang-icon/us-icon.png" style="height: 50px" alt=""></a></li>
             </ul>
         </div>
 
@@ -841,7 +841,7 @@
                     <div class="card">
                         <h5 class="text-center">HỎI THÔNG TIN</h5>
                         <div class="card-body">
-                            <?php include('form.php'); ?>
+                            <?php include('form-en.php'); ?>
                         </div>
 
                     </div>

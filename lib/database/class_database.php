@@ -4,7 +4,9 @@ class database{
     private $userhost = "root";
     private $passhost = "";
     private $dbname = "test";
+    private $sql = "";
     private $conn = NULL;
+    private $error = NULL;
     private $result =null;
     
     function database($hostname,$userhost,$passhost,$dbname){
@@ -25,6 +27,7 @@ class database{
     }
 
     public function query($sql){
+        $this->sql = $sql;
         $this->result =  mysqli_query($this->conn,$sql);
     }
 
@@ -42,5 +45,17 @@ class database{
     public function getConn(){
         return $this->conn;
     }
+
+    public function getError(){
+        if (mysqli_connect_errno()){
+            $this->error[] = mysqli_connect_error();
+        }
+        if (!mysqli_query($this->conn,$this->sql))
+        {
+            $this->error[] = mysqli_error($this->conn);
+        }
+        return $this->error;
+    }
+
 }
 ?>

@@ -1,4 +1,4 @@
 <?php
 
-$lang_default = "vi";
+$lang_default = "en";
 

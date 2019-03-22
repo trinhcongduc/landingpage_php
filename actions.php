@@ -25,6 +25,11 @@ if ($_POST["submit"]) {
     $values = implode(',', $datas);
     $sql = " insert into `$tablename` ( $fields) values ($values)";
     $DB->query($sql);
+    if(!empty($DB->getError())){
+        echo "<pre>";
+        print_r($DB->getError());
+        echo "</pre>";die();
+    }
     if (!$DB->getResult()) {
         echo "<script type='text/javascript'>";
         echo "window.location.href='$base_url'";

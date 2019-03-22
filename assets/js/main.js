@@ -48,7 +48,13 @@ $(document).ready(function () {
         return true;
     }
     $("#submit").on("click",function (event) {
-        var html = '<small class="field-obligate">Trường này là bắt buộc</small>';
+        var language  = $(this).attr('lang');
+        var html = '';
+        if(language === 'en'){
+             html = '<small class="field-obligate">This field is required.</small>';
+        }else{
+             html = '<small class="field-obligate">Trường này là bắt buộc.</small>';
+        }
         var name = $("form").find("input[name='name']");
         var email = $("form").find("input[name='email']");
         var phone = $("form").find("input[name='phone_number']");
