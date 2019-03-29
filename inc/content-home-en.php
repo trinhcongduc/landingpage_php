@@ -1,6 +1,12 @@
+<?php
+echo "<pre>";
+print_r($i18n);
+echo "</pre>";
 
+?>
 <div class="wrapper">
     <h1 class="class=" text-center""><?php echo $title ?></h1>
+	<h2><?php echo L::thankyou;  ?></h2>
     <h1>CONTENT-HOME-ENGLISH</h1>
     <div class="container">
         <div class="language-select">

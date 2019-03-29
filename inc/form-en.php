@@ -1,4 +1,4 @@
-<form id="form-main" action="<?php echo $base_url?>/thankyou.php" method="post">
+<form id="form-main" action="<?php echo $base_url?>/thankyou-en.php" method="post">
     <div class="form-group">
         <input class="form-control" type="text" name="name"  placeholder="Name">
     </div>

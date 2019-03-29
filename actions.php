@@ -2,7 +2,6 @@
 require_once "./lib/database/class_database.php";
 require_once "./config/index.php";
 require_once "./inc/controller/send_mail.php";
-//include "./inc/test_senMail.php";
 
 if ($_POST["submit"]) {
     $DB = new database($hostname, $userhost, $passhost, $dbname);
@@ -35,7 +34,7 @@ if ($_POST["submit"]) {
         echo "window.location.href='$base_url'";
         echo "</script>";
     }
-    sendMail( $email_config,$html);
+//    sendMail( $email_config,$html);
     $DB->disconnect();
 } else {
 
